@@ -56,6 +56,7 @@ docker run -it -d --restart always \
 }
 ```
 
+
 ### 本地存储图片
 
 本地存储时，上传的图片将会被存储在容器的 `/work/frontend/public/upload-img/` 目录。记得要将存储目录挂在到容器的该位置下。
@@ -77,6 +78,7 @@ docker run -it -d --restart always \
     "storage_type": "local"
 }
 ```
+配置时需注意容器内与宿主机非同一网段
 
 ### 使用 SQlite 数据库
 
